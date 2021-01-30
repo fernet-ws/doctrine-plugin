@@ -1,0 +1,19 @@
+{
+    "name": "fernet/doctrine",
+    "description": "Doctrine plugin for the Fernet framework",
+    "type": "library",
+    "require": {
+        "fernet/framework": "@dev",
+        "doctrine/orm": "^2.8"
+    },
+    "autoload": {
+        "psr-4": {"DoctrineFernet\\": "src/"}
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rodrigo 'Albo' Arce",
+            "email": "albo@pragmore.com"
+        }
+    ]
+}
