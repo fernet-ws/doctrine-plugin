@@ -7,7 +7,7 @@
         "doctrine/orm": "^2.8"
     },
     "autoload": {
-        "psr-4": {"DoctrineFernet\\": "src/"}
+        "psr-4": {"DoctrineFernet\\": "src"}
     },
     "license": "MIT",
     "authors": [
