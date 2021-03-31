@@ -3,7 +3,7 @@
     "description": "Doctrine plugin for the Fernet framework",
     "type": "library",
     "require": {
-        "fernet/framework": "*",
+        "fernet/framework": "0.*",
         "doctrine/orm": "^2.8"
     },
     "autoload": {
