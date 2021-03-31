@@ -37,7 +37,8 @@ class Bootstrap extends PluginBootstrap
             'user'     => $_ENV['DB_USER'] ?? null,
             'password' => $_ENV['DB_PASSWORD'] ?? null,
             'dbname'   => $_ENV['DB_NAME'] ?? null,
-            'path'   => $_ENV['DB_PATH'] ?? null,
+            'host'     => $_ENV['DB_HOST'] ?? null,
+            'path'     => $_ENV['DB_PATH'] ?? null,
         ];
         $config = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode);
         $entityManager = EntityManager::create($dbParams, $config);
