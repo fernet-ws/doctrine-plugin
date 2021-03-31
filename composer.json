@@ -15,5 +15,7 @@
             "name": "Rodrigo 'Albo' Arce",
             "email": "albo@pragmore.com"
         }
-    ]
+    ],
+      "minimum-stability": "dev",
+      "prefer-stable": true
 }
