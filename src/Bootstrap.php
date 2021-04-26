@@ -18,10 +18,13 @@ class Bootstrap extends PluginBootstrap
 
     public function install(Framework $framework): void
     {
-        copy(
-            dirname(__DIR__) . DIRECTORY_SEPARATOR .  self::CLI_CONFIG_FILE, 
-            $framework->getConfig('rootPath').DIRECTORY_SEPARATOR .self::CLI_CONFIG_FILE
-        );
+        // TODO: remove if when the install stops being called on every call
+        if (!file_exists(self::CLI_CONFIG_FILE)) {
+            copy(
+                dirname(__DIR__) . DIRECTORY_SEPARATOR .  self::CLI_CONFIG_FILE, 
+                $framework->getConfig('rootPath').DIRECTORY_SEPARATOR .self::CLI_CONFIG_FILE
+            );
+        }
     }
 
     public function setUp(Framework $framework): void
